@@ -1,0 +1,5 @@
+flask
+PIL
+flask_wtf
+wtforms
+werkzeug

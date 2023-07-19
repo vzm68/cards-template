@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<style>
+    @font-face {
+        font-family: 'MyFont';
+        src: url('/fonts/GTAmericaLCG-ExtMd.woff') format('woff');
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+</style>
+
+<html lang="en">
+<head>
+    <title>Beter LIVE Cards</title>
+</head>
+<body>
+    <div class="center">
+        <form method="POST" enctype="multipart/form-data">
+            {{ form.hidden_tag() }}
+            <p>
+                {{ form.first_name.label }}<br>
+                {{ form.first_name(size=20) }}
+            </p>
+            <p>
+                {{ form.last_name.label }}<br>
+                {{ form.last_name(size=20) }}
+            </p>
+            <p>
+                {{ form.image.label }}<br>
+                {{ form.image() }}
+            </p>
+            <input type="checkbox" id="studio" name="studio">
+            <label for="studio">Studio</label><br>
+            <input type="checkbox" id="phone" name="phone">
+            <label for="phone">Phone</label><br>
+            <p>
+                {{ form.submit() }}
+            </p>
+        </form>
+    </div>
+    <footer>
+        <p>P0wered by Vitalii Zabrodskyi for BETER Live</p>
+    </footer>
+</body>
+</html>
