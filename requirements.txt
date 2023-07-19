@@ -1,5 +1,5 @@
-flask
-PIL
-flask_wtf
-wtforms
-werkzeug
+Flask~=2.3.2
+Pillow~=9.5.0
+flask_wtf~=1.1.1
+wtforms~=3.0.1
+werkzeug~=2.3.4
